@@ -12,7 +12,6 @@ WEB_HOOK = "https://discord.com/api/webhooks/843695641598885918/d3VuT_VZ6EMxxMmR
 
 def monitor_products():
 	#print("\n\n\n\n\n\nStarting Scraping New Data :",count,'\n\n\n\n\n\n')
-
 	#products_scraper()
 	products_scraper_footwear()
 	print("Checking Changes")
@@ -24,13 +23,7 @@ def monitor_products():
 
 
 
-count = 1
-while True:
-	print('Monitoring Count :',count)
-	monitor_products()
-	print('Going to Sleep')
-	time.sleep(INTERVAL_TIME*60)
-	count = count + 1
 
-
-
+print('Starting Monitor Products ...')
+monitor_products()
+print('Closing Monitor Products ...')
