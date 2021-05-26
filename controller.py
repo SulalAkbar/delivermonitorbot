@@ -1,5 +1,12 @@
+from os import environ
+from flask import Flask
 import time
 from monitor import check_for_change,delete_file,rename_file,products_scraper_footwear
+
+
+app = Flask(__name__)
+app.run(environ.get('PORT'))
+
 
 
 #In Minutes
