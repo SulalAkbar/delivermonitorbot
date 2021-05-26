@@ -3,7 +3,7 @@ from monitor import check_for_change,delete_file,rename_file,products_scraper_fo
 
 
 #In Minutes
-INTERVAL_TIME = 3 
+INTERVAL_TIME = 30 
 
 #Enter URL of channel for which you want to recive notifications
 WEB_HOOK = "https://discord.com/api/webhooks/843695641598885918/d3VuT_VZ6EMxxMmRwnVOvu2YxyMNPYWALgsb9soXzkz-lc55cDhLCbpGnJw9cYlMMEA_"
