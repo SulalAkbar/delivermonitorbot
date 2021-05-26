@@ -23,7 +23,13 @@ def monitor_products():
 
 
 
+count = 1
+while True:
+	print('Monitoring Count :',count)
+	monitor_products()
+	print('Going to Sleep')
+	time.sleep(INTERVAL_TIME*60)
+	count = count + 1
 
-print('Starting Monitor Products ...')
-monitor_products()
-print('Closing Monitor Products ...')
+
+
