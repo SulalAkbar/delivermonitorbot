@@ -306,7 +306,7 @@ def check_for_change(newfile,prevfile,web_hook_url):
 						else:
 							print('Send Notification for New Variant',url)
 
-							send_notification('Variant Restock',url,new_struct[url])
+							send_notification('Variant Restock',url,new_struct[url],web_hook_url)
 
 
 		else:
