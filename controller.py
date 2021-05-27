@@ -1,16 +1,16 @@
-from os import environ
-from flask import Flask
+#from os import environ
+#from flask import Flask
 import time
 from monitor import check_for_change,delete_file,rename_file,products_scraper_footwear
 
 
-app = Flask(__name__)
-app.run(environ.get('PORT'))
+# app = Flask(__name__)
+# app.run(environ.get('PORT'))
 
 
 
 #In Minutes
-INTERVAL_TIME = 30 
+INTERVAL_TIME = 5 
 
 #Enter URL of channel for which you want to recive notifications
 WEB_HOOK = "https://discord.com/api/webhooks/843695641598885918/d3VuT_VZ6EMxxMmRwnVOvu2YxyMNPYWALgsb9soXzkz-lc55cDhLCbpGnJw9cYlMMEA_"
