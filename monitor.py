@@ -229,7 +229,7 @@ def create_struct(data):
 	struct = {}
 
 	for row in data:
-		print(row)
+		#print(row)
 		struct[row[1]] = {'state':row[0],'title':row[2],
 	'image':row[3],'available':row[4],'variants':row[5],'question':row[6]}
 
@@ -302,7 +302,7 @@ def check_for_change(newfile,prevfile,web_hook_url):
 				if prev_struct[url]['state'] == 'available':
 					for v in json.loads(new_struct[url]['available']):
 						if v in json.loads(prev_struct[url]['available']):
-							print(v,'Already')
+							#print(v,'Already')
 						else:
 							print('Send Notification for New Variant',url)
 
